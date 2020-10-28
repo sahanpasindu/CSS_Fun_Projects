@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Poppins', sans-serif;
+   background: url(bg2.jpg);
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+header {
+   position: relative;
+   max-width: 1200px;
+   margin: 20px auto;
+   background: #fff;
+   box-sizing: border-box;
+   border-radius: 4px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.logo {
+   color: #069370;
+   height: 50px;
+   font-size: 36px;
+   line-height: 60px;
+   padding: 0 20px;
+   text-align: center;
+   box-sizing: border-box;
+   float: left;
+   font-weight: 700;
+   text-decoration: none;
+}
+
+nav {
+   float: right;
+}
+
+.clearfix {
+   clear: both;
+}
+
+nav ul {
+   margin: 0;
+   padding: 0;
+   display: flex;
+}
+
+nav ul li {
+   list-style: none;
+
+}
+
+nav ul li a {
+   display: block;
+   margin: 10px 0;
+   padding: 10px 20px;
+   color: #262626;
+   text-decoration: none;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+   background: #069370;
+   color: white;
+   transition: 0.5s;
+}
+
+/* laptop */
+@media (max-width: 1200px) {
+   header {
+      margin: 20px;
+   }
+}
+
+/* ipad */
+@media (max-width: 768px) {
+   .menu-toggle {
+      display: block;
+      width: 40px;
+      height: 40px;
+      margin: 10px;
+      float: right;
+      cursor: pointer;
+      text-align: center;
+      font-size: 30px;
+      color: #069370;
+   }
+
+   .menu-toggle:before {
+      content: '\f0c9';
+      font-family: fontAwesome;
+      line-height: 40px;
+   }
+
+   .menu-toggle.active:before {
+      content: '\f00d';
+   }
+
+   nav {
+      display: none;
+   }
+
+   nav.active {
+      display: block;
+      width: 100%;
+   }
+
+   nav.active ul {
+      display: block;
+   }
+
+   nav.active ul li a {
+      margin: 0;
+   }
+}
