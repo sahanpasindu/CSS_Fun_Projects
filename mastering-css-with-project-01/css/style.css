@@ -31,6 +31,7 @@ body{
    flex-direction: column;
    justify-content:space-between;
    align-items: center;
+   z-index: 10;
 }
 
 .menu-icon{
@@ -47,7 +48,7 @@ body{
 
 .line-1, .line-3{
    width:1.8rem;
-   transition:width .2s;
+   transition:all .4s;
 }
 
 .menu-icon:hover .line{
@@ -83,7 +84,7 @@ body{
 
 /* navigation */
 .navigation{
-   margin-left: 8rem;
+   left: -32rem;
    position:fixed;
    width: 30rem;
    height: 100%;
@@ -93,6 +94,7 @@ body{
    align-items: center;
    background:linear-gradient(to top,rgba(34,32,41,1),rgba(34,32,41,.6)),url("../img/image-03.jpg") center no-repeat;
    background-size: cover;
+   transition:left .8s
 }
 
 .navigation-heading{
@@ -203,5 +205,22 @@ body{
    color:#fff;
 }
 
+.checkbox:checked ~ .navigation{
+   left:8rem;
+}
+
+.checkbox:checked ~ .sidebar .line-1{
+   transform: rotate(-405deg) translate(-5px, 6px);
+   width:2.5rem;
+}
+
+.checkbox:checked ~ .sidebar .line-2{
+   opacity: 0;
+}
+
+.checkbox:checked ~ .sidebar .line-3{
+   transform: rotate(405deg) translate(-5px, -6px);
+   width:2.5rem;
+}
 /* end of navigation */
 /* end of navbar */
