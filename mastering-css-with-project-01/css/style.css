@@ -263,6 +263,7 @@ body{
    letter-spacing: .2rem;
    margin-bottom: 0;
    animation: anim 2s;
+   color: rgba(255, 255, 255, 0.918);
 }
 
 .banner-paragraph{
@@ -306,3 +307,113 @@ background: linear-gradient(to left, rgb(199, 173, 27), goldenrod);
    }
 }
 /* end of header */
+
+/* about us */
+.about-us{
+   margin-left: 8rem;
+   display:flex;
+   background-color: #ddd;
+}
+
+.about-us-content{
+   flex: 0 1 50%;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding:10rem;
+   box-sizing: border-box;
+}
+
+.about-us-heading{
+   font-family: 'Josefin Sans',sans-serif;
+   font-size: 4rem;
+   font-weight: 300;
+   transform:uppercase;
+   color: #555;
+}
+
+.small-underline{
+   width:9rem;
+   height: .1rem;
+   margin: 0 auto .8rem auto;
+   background-color: #b85d1c;
+}
+
+.big-underline{
+   width: 20rem;
+   height: .1rem;
+   background-color: #b85d1c;
+}
+
+.sub-heading{
+   font-size: 3.5rem;
+   font-weight: 300;
+   letter-spacing: .2rem;
+   color: #b85d1c;
+}
+
+.about-us-paragraph{
+   font-size: 1.6rem;
+   font-style: italic;
+   font-weight: 300;
+   text-align: center;
+   margin-bottom: 5rem;
+}
+
+.about-us-btn{
+   width:15rem;
+   padding: .7rem .5rem;
+   font-family: 'Oxygen',sans-serif;
+   font-size: 1.2rem;
+   text-transform: uppercase;
+   color: #b85d1c;
+   background-color: transparent;
+   border:.1rem solid #b85d1c;
+   outline:none;
+   cursor: pointer;
+}
+
+.btn-arrow{
+   margin-left: .5rem;
+   transition:margin-left .4s;
+}
+
+.about-us-btn:hover .btn-arrow{
+   margin-left: 1.2rem;
+}
+
+.about-us-images{
+   flex: 1 1;
+   position: relative;
+}
+
+.image{
+   width:30rem;
+   height: 25rem;
+   position: absolute;
+   top:50%;
+   left:50%;
+   box-shadow: 0 3rem 6rem rgba(0,0,0,.5);
+   border-radius: .4rem;
+   box-sizing: border-box;
+}
+
+
+.image-1{
+   transform: translate(-15%,-85%);
+}
+
+.image-2{
+   transform: translate(-65%,-65%);
+}
+
+.image-3{
+   transform: translate(-45%,-45%);
+}
+
+.image-4{
+   transform: translate(-25%,-25%);
+}
+
+/* end of about us */
