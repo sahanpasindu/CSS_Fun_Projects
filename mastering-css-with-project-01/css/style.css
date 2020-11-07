@@ -530,3 +530,64 @@ body {
 }
 
 /* end of rooms */
+
+/* customers */
+
+.customers {
+   margin-left: 8rem;
+   padding-bottom: 7rem;
+   background-color: #15141B;
+}
+
+.customers-paragraph {
+   font-size: 1.8rem;
+   color: #DDD;
+   width: 50%;
+   margin: 2rem auto 8rem auto;
+   text-align: center;
+}
+
+.customers-card-wrapper {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.customer-card {
+   background-color: #EEE;
+   width: 50rem;
+   display: flex;
+}
+
+.customer-image-wrapper {
+   margin: auto 0;
+}
+
+.customer-image {
+   width: 20rem;
+   height: 18rem;
+   margin-left: -1.3rem;
+   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2);
+}
+
+.customer-info {
+   padding: 0 2rem;
+}
+
+.customer-full-name {
+   font-size: 2rem;
+   font-weight: 300;
+   margin-bottom: 0;
+}
+
+.customer-paragraph-1 {
+   font-size: 1.2rem;
+   font-style: italic;
+   color: #b85d1c;
+}
+
+.customer-paragraph-2 {
+   font-size: 1.3rem;
+   font-style: italic;
+}
+
+/* end of customers */
