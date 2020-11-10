@@ -234,7 +234,7 @@ body {
 .header {
    margin-left: 8rem;
    height: 100vh;
-   background: linear-gradient(to top, rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url(../img/image-03.jpg);
+   background: linear-gradient(to top, rgba(0, 0, 0, .3), rgba(0, 0, 0, .2)), url(../img/hero.jpg);
    background-size: cover;
 }
 
@@ -563,9 +563,8 @@ body {
 }
 
 .customer-image {
-   width: 20rem;
-   height: 18rem;
-   margin-left: -1.3rem;
+   width: 13rem;
+   margin-left: -2.3rem;
    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2);
 }
 
@@ -710,3 +709,27 @@ body {
 }
 
 /* end of footer */
+
+/* Meadia Query */
+@media(max-width: 1400px) {
+   .customers-card-wrapper {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .customer-card:first-child {
+      margin-bottom: 3rem;
+   }
+
+   .main-part {
+      flex-direction: column;
+   }
+
+   .footer-list {
+      display: flex;
+   }
+
+   .footer-list-item {
+      margin-left: 3rem;
+   }
+}
